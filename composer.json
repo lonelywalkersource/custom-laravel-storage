@@ -1,0 +1,29 @@
+{
+    "name": "lonely-walker/custom-laravel-storage",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lonely walker",
+            "email": "walkerdistance@163.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "league/flysystem": "^3.8",
+        "aliyuncs/oss-sdk-php": "^2.7",
+        "qiniu/php-sdk": "^7.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "LonelyWalker\\CustomLaravelStorage\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LonelyWalker\\CustomLaravelStorage\\CustomLaravelStorageServiceProvider"
+            ]
+        }
+    }
+}
